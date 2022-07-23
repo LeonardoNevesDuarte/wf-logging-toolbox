@@ -1,5 +1,15 @@
 import { wfLogger } from './log/wfLogger'
 
-const logger = new wfLogger(null)
+export class wfLoggingToolbox {
+  
+  obj: wfLogger
+  
+  constructor(tz: string | null) {
+    this.obj = new wfLogger(tz)
+  }
 
-logger.info('This is a test', null)
+  info(message: string, user: string | null) {
+    this.obj.info(message, user)
+  }
+
+}
