@@ -7,7 +7,6 @@ import moment from 'moment-timezone'
 export class wfLogger {
 
   timezone: string
-  username_length: number = 36
   default_user: string = 'SYSTEM'
 
   constructor(tz: string | null) {
@@ -31,7 +30,7 @@ export class wfLogger {
    * @param user    Current user in the procedure execution
    */
   debug(message: string, user: string | null) {
-    console.debug(`[DEBG] [${this.getTimestamp()}] ${message}`)
+    console.debug(`[DEBG] [${this.getTimestamp()}] ${this.formatUser(user)} ${message}`)
   }
 
   /**
@@ -41,7 +40,7 @@ export class wfLogger {
    * @param user    Current user in the procedure execution
    */
   warn(message: string, user: string | null) {
-    console.warn(`[WARN] [${this.getTimestamp()}] ${message}`)
+    console.warn(`[WARN] [${this.getTimestamp()}] ${this.formatUser(user)} ${message}`)
   }
 
   /**
@@ -51,7 +50,7 @@ export class wfLogger {
    * @param user    Current user in the procedure execution
    */
   error(message: string, user: string | null) {
-    console.error(`[ERRR] [${this.getTimestamp()}] ${message}`)
+    console.error(`[ERRR] [${this.getTimestamp()}] ${this.formatUser(user)} ${message}`)
   }
 
   /**
@@ -87,6 +86,6 @@ export class wfLogger {
   private formatUser(user: string | null): string {
     const space = ' ';
     const userName = (user ? user : this.default_user)
-    return '[' + userName + '] ' + space.repeat(this.username_length - userName.length);
+    return '[' + userName + ']';
   }
 }
