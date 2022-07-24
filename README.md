@@ -49,7 +49,7 @@ loggerInEST.info('This is my message', 'my_user')
 
 ## License
 * This library is licensed under GNU General Public License v.3.0
-* Please check its content in (LICENSE)
+* Please check its content in [a link](https://github.com/LeonardoNevesDuarte/wf-logging-toolbox/blob/main/LICENSE)
 
 ## Uninstallation
 * This library/package can be easily uninstalled by running
