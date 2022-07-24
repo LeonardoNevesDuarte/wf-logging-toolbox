@@ -56,5 +56,5 @@ export class wfLoggingToolbox {
   error(message: string, user: string | null) {
     this.obj.warn(message, user)
   }
-
+ 
 }
