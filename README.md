@@ -45,11 +45,11 @@ loggerInUTC.info('This is my message', 'my_user')
 loggerInEST.info('This is my message', 'my_user')
 //Expected result: [INFO] [2022-07-24 15:47:19] [my_user] This is my message
 ```
-* Check other examples in /dist/examples.js
+* Check other examples in [/dist/examples.js](https://github.com/LeonardoNevesDuarte/wf-logging-toolbox/blob/main/dist/examples.js)
 
 ## License
 * This library is licensed under GNU General Public License v.3.0
-* Please check its content in [a link](https://github.com/LeonardoNevesDuarte/wf-logging-toolbox/blob/main/LICENSE)
+* Please check the license content [here](https://github.com/LeonardoNevesDuarte/wf-logging-toolbox/blob/main/LICENSE)
 
 ## Uninstallation
 * This library/package can be easily uninstalled by running
