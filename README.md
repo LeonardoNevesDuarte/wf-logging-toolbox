@@ -11,7 +11,7 @@ Output messages to the default console with log level, timestamp and user
 
 ## Installation
 * This library/package can be easily installed by running
-```npm install wf-logging-tollbox --save```
+```npm install wf-logging-toolbox --save```
 
 ## Dependencies
 * Node modules:
@@ -53,5 +53,4 @@ loggerInEST.info('This is my message', 'my_user')
 
 ## Uninstallation
 * This library/package can be easily uninstalled by running
-```npm uninstall wf-logging-tollbox```
-
+```npm uninstall wf-logging-toolbox```

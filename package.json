@@ -1,6 +1,6 @@
 {
   "name": "wf-logging-toolbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Logging utility library for Node.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,7 +16,8 @@
   },
   "keywords": [
     "node",
-    "node.js"
+    "node.js",
+    "logging"
   ],
   "author": "Leonardo Neves Duarte",
   "license": "GPL-3.0",
